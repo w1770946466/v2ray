@@ -242,7 +242,7 @@ socks_user_config() {
 }
 socks_pass_config() {
 	while :; do
-		read -p "$(echo -e "请输入$yellow密码$none...(默认密码: ${cyan}233blog.com$none)"): " userpass
+		read -p "$(echo -e "请输入$yellow密码$none...(默认密码: ${cyan}123456$none)"): " userpass
 		[ -z "$userpass" ] && userpass="233blog.com"
 		case $userpass in
 		*[/$]* | *\&*)
@@ -585,7 +585,7 @@ shadowsocks_password_config() {
 
 	while :; do
 		echo -e "请输入 "$yellow"Shadowsocks"$none" 密码"
-		read -p "$(echo -e "(默认密码: ${cyan}233blog.com$none)"): " sspass
+		read -p "$(echo -e "(默认密码: ${cyan}123456$none)"): " sspass
 		[ -z "$sspass" ] && sspass="233blog.com"
 		case $sspass in
 		*[/$]*)
@@ -2137,11 +2137,7 @@ esac
 clear
 while :; do
 	echo
-	echo "........... V2Ray 一键安装脚本 & 管理脚本 by 233blog.com .........."
-	echo
-	echo "帮助说明: https://233blog.com/post/16/"
-	echo
-	echo "搭建教程: https://233blog.com/post/17/"
+	echo "........... V2Ray 一键安装脚本 .........."
 	echo
 	echo " 1. 安装"
 	echo
